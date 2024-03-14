@@ -9,7 +9,7 @@ import {
 
 function App() {
   const [selectedCountryId, setSelectedCountryId] = useState<string | number>(
-    "",
+    ""
   );
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedUniversity, setSelectedUniversity] = useState("");
@@ -40,8 +40,8 @@ function App() {
   return (
     <form onSubmit={handleSubmit}>
       <h1>Анкета</h1>
-      <div class="selectContainer">
-        <div class="selectWrapper">
+      <div className="selectContainer">
+        <div className="selectWrapper">
           <label htmlFor="countrySelect">Выберите страну:</label>
           <select
             id="countrySelect"
@@ -58,7 +58,7 @@ function App() {
             ))}
           </select>
         </div>
-        <div class="selectWrapper">
+        <div className="selectWrapper">
           <label htmlFor="citySelect">Выберите город:</label>
           <select
             id="citySelect"
@@ -77,7 +77,7 @@ function App() {
               ))}
           </select>
         </div>
-        <div class="selectWrapper">
+        <div className="selectWrapper">
           <label htmlFor="university">Тип ВУЗа:</label>
           <select
             id="university"
@@ -95,7 +95,7 @@ function App() {
             ))}
           </select>
         </div>
-        <div class="selectWrapper">
+        <div className="selectWrapper">
           <label htmlFor="accom">Вариант проживания:</label>
           <select
             id="accom"
